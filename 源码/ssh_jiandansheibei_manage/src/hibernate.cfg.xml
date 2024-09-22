@@ -1,0 +1,32 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+ 	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+ 	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+ 
+<hibernate-configuration>
+ 	<session-factory>
+ 		<property name="hibernate.connection.url">
+ 			jdbc:mysql://127.0.0.1/ssh_jiandansheibei_manage?useSSL=false&amp;serverTimezone=Asia/Shanghai&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;allowPublicKeyRetrieval=true
+ 		</property>
+ 		<property name="hibernate.connection.driver_class">
+ 			com.mysql.jdbc.Driver
+ 		</property>
+ 		<property name="hibernate.connection.username">ssh_jiandansheibei_manage</property>
+ 		<property name="hibernate.connection.password">ssh_jiandansheibei_manage</property>
+ 		<property name="hibernate.dialect">
+ 			org.hibernate.dialect.MySQLDialect
+ 		</property>
+ 		<property name="hibernate.show_sql">true</property>
+ 		<property name="hibernate.current_session_context_class">
+ 			thread
+ 		</property>
+ 		<property name="connection.useUnicode">true</property>
+ 		<property name="connection.characterEncoding">UTF-8</property>
+ 
+				<mapping resource="graduation/design/model/User.hbm.xml" />
+ 		<mapping resource="graduation/design/model/Sccs.hbm.xml" />
+ 		<mapping resource="graduation/design/model/Bumen.hbm.xml" />
+ 		<mapping resource="graduation/design/model/ShebeiFile.hbm.xml" />
+ 
+	</session-factory>
+</hibernate-configuration>
+ 
